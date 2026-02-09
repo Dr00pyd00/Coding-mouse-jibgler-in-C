@@ -53,7 +53,7 @@ int main() {
     libevdev_uinput_write_event(uidev, EV_REL, direction, amplitude);
     libevdev_uinput_write_event(uidev, EV_SYN, SYN_REPORT, 0);
 
-    usleep(5000);
+    usleep(50000);
 
 
   }
