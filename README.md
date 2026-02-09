@@ -3,6 +3,31 @@
 
 ## following along a youtube tutorial 
 
+---
+
+# Le projet:
+
+    Coder un souris virtuel qui bouge seul.
+---
+
+## dev :
+
+```c
+struct libevdev *dev = libevdev_new();
+```
+"dev" est la fiche technique/plan contient les infos:
+    - nom
+    - type d'envent ( EV_REL, EV_SYNC) 
+    - code specifiques (REL_X, BTN_LEFT)
+
+## uidev :
+
+Peripherique concret dans le kernel.
+```c
+    struct libevdev_uinput *iudev = NULL;
+```
+
+### ==> uidev = l’objet utilisable, dev = la recette / plan
 
 ---
 
@@ -17,6 +42,23 @@
     - ca lire ou ecrit direct au periph sans cache ni rien.
 
 ---
+
+## EVTEST:
+
+Permet de voir les peipherique de maniere precise:
+
+```bash 
+    sudo apt install evtest
+```
+Puis:
+```bash 
+    sudo evtest
+```
+
+
+---
+
+
 
 
 
