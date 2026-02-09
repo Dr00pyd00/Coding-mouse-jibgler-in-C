@@ -16,9 +16,9 @@
 struct libevdev *dev = libevdev_new();
 ```
 "dev" est la fiche technique/plan contient les infos:
-    - nom
-    - type d'envent ( EV_REL, EV_SYNC) 
-    - code specifiques (REL_X, BTN_LEFT)
+    -nom
+    -type d'envent ( EV_REL, EV_SYNC) 
+    -code specifiques (REL_X, BTN_LEFT)
 
 ## uidev :
 
